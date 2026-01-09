@@ -142,7 +142,7 @@ We tag mitigation approaches by the dominant lever:
 | Paper | Level | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
 | FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning | L2 | diagnostic, instance-level faithfulness | arXiv | 2025 | https://arxiv.org/abs/2510.04040 |
-| Walk the Talk? Measuring the Faithfulness of Large Language Model Rationales | L2 | counterfactual simulatability / concept perturbations | arXiv | 2025 | https://arxiv.org/abs/2504.14150 |
+| Walk the Talk? Measuring the Faithfulness of Large Language Model Explanations | L2 | counterfactual simulatability / concept perturbations | arXiv | 2025 | https://arxiv.org/abs/2504.14150 |
 
 #### 2.3 L3 — Structured-verifiable benchmarks
 
@@ -166,12 +166,12 @@ We tag mitigation approaches by the dominant lever:
 | Paper | Mitigation | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
 | Chain-of-Thought Prompting Elicits Reasoning in Large Language Models | P | CoT prompting as interface (not a faithfulness guarantee) | NeurIPS | 2022 | https://arxiv.org/abs/2201.11903 |
-| Large Language Models Don’t Care How You Think: Why CoT Prompting Fails in Subjective Tasks | P | CoT failure under subjectivity / preference | ICASSP | 2025 | https://arxiv.org/abs/2505.04032 |
+| Larger Language Models Don't Care How You Think: Why Chain-of-Thought Prompting Fails in Subjective Tasks | P | CoT failure under subjectivity / preference | ICASSP | 2025 | https://arxiv.org/abs/2409.06173 |
 
 #### 3.2 Verification & external tool binding (VT)
 
 | Paper | Mitigation | Focus | Venue | Year | Link |
-|---|---|---|---|---:|---|
+|---|---|---|---:|---:|---|
 | Typed Chain-of-Thought: A Curry-Howard Framework for Verifying LLM Reasoning | VT | mechanically verifiable intermediate steps | arXiv | 2025 | https://arxiv.org/abs/2510.01069 |
 | Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation | VT | CoT monitoring (and its failure modes) | arXiv | 2025 | https://arxiv.org/abs/2503.11926 |
 
