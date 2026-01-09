@@ -154,7 +154,7 @@ We tag mitigation approaches by the dominant lever:
 
 | Paper | Level | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
-| How to Think Step-by-Step: A Mechanistic Understanding of Chain-of-Thought Reasoning | L4 | mechanistic analysis of CoT computation | TMLR | 2024 | https://openreview.net/forum?id=8JdVyWcYQW |
+| How to Think Step-by-Step: A Mechanistic Understanding of Chain-of-Thought Reasoning | L4 | mechanistic analysis of CoT computation | TMLR | 2024 | https://openreview.net/forum?id=uHLDkQVtyC |
 | Measuring Chain-of-Thought Monitorability Through Faithfulness and Verbosity | L4 | monitorability score combining faithfulness + verbosity | arXiv | 2025 | https://arxiv.org/abs/2510.27378 |
 
 ---
