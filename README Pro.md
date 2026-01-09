@@ -116,7 +116,7 @@ We tag mitigation approaches by the dominant lever:
 | Paper | Phenomenon | Evaluation | Mitigation | Venue | Year | Link |
 |---|---|---|---|---|---:|---|
 | Measuring Faithfulness in Chain-of-Thought Reasoning | NPR | L1/L2 | — | arXiv | 2023 | https://arxiv.org/abs/2307.13702 |
-| Chain-of-Thought Unfaithfulness as Disguised Accuracy | NPR | L1 | — | NeurIPS | 2024 | https://arxiv.org/abs/2402.14897 |
+| Chain-of-Thought Unfaithfulness as Disguised Accuracy | NPR | L1 | — | TMLR | 2024 | https://arxiv.org/abs/2402.14897 |
 | Chain-of-Thought Reasoning in the Wild Is Not Always Faithful | NPR | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2503.08679 |
 
 #### 1.3 Alignment-induced unfaithfulness (AIU) & deception/hiding (SDH)
