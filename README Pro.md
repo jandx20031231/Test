@@ -161,21 +161,21 @@ We tag mitigation approaches by the dominant lever:
 
 ### 3. Mitigation Strategies
 
-#### 3.1 Inference-time prompting / sampling (P, SC)
+#### 3.1 Inference-time prompting / sampling
 
 | Paper | Mitigation | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
 | Chain-of-Thought Prompting Elicits Reasoning in Large Language Models | P | CoT prompting as interface (not a faithfulness guarantee) | NeurIPS | 2022 | https://arxiv.org/abs/2201.11903 |
 | Larger Language Models Don't Care How You Think: Why Chain-of-Thought Prompting Fails in Subjective Tasks | P | CoT failure under subjectivity / preference | ICASSP | 2025 | https://arxiv.org/abs/2409.06173 |
 
-#### 3.2 Verification & external tool binding (VT)
+#### 3.2 Verification & external tool binding
 
 | Paper | Mitigation | Focus | Venue | Year | Link |
 |---|---|---|---:|---:|---|
 | Typed Chain-of-Thought: A Curry-Howard Framework for Verifying LLM Reasoning | VT | mechanically verifiable intermediate steps | arXiv | 2025 | https://arxiv.org/abs/2510.01069 |
 | Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation | VT | CoT monitoring (and its failure modes) | arXiv | 2025 | https://arxiv.org/abs/2503.11926 |
 
-#### 3.3 Training-time methods & internal intervention (FT, II)
+#### 3.3 Training-time methods & internal intervention
 
 | Paper | Mitigation | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
