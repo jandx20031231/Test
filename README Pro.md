@@ -35,7 +35,7 @@ This repository curates and organizes research on CoT faithfulness, following th
 
 > **Figures (add to `assets/`)**  
 > - `assets/figure1_failure_modes.png` – Failure modes illustration (recommended)  
-![Uploading b5fb4c5f99e633b76d1eaf3f6753f170.png…]()
+![Failure Phenomena](https://github.com/jandx20031231/Test/blob/image/Survey%20Image.png)
 
 ---
 
