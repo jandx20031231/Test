@@ -95,7 +95,8 @@ We tag mitigation approaches by the dominant lever:
 
 ## Paper List
 
-> **Note.** For papers spanning multiple tags, we annotate the **primary** phenomenon / level / mitigation to keep the table readable.
+> **Note.** This list is expanded and reorganized according to the references and taxonomy in our survey.
+> We annotate the *primary* phenomenon / evaluation level / mitigation family when applicable to keep tables readable.
 
 ### 1. Failure Phenomena
 
@@ -103,78 +104,128 @@ We tag mitigation approaches by the dominant lever:
 
 | Paper | Phenomenon | Evaluation | Mitigation | Venue | Year | Link |
 |---|---|---|---|---|---:|---|
-| Language Models Don't Always Say What They Think: Unfaithful Explanations in CoT Prompting | IDU | L1 | — | NeurIPS | 2023 | https://arxiv.org/abs/2305.04388 |
-| Towards Understanding Sycophancy in Language Models | IDU | L1 | — | ICLR | 2024 | https://arxiv.org/abs/2310.13548 |
+| Language models don’t always say what they think: Unfaithful explanations in chain-of-thought prompting | IDU | L1 | — | NeurIPS | 2023 | https://arxiv.org/abs/2305.04388 |
+| Towards understanding sycophancy in language models | IDU | L1 | — | ICLR | 2024 | https://arxiv.org/abs/2310.13548 |
+| A closer look at bias and chain-of-thought faithfulness of large (vision) language models | IDU | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2505.23945 |
+| Are DeepSeek R1 and other reasoning models more faithful? | IDU | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2501.08156 |
+| Are you sure? Challenging LLMs leads to performance drops in the FlipFlop experiment | IDU | L1 | — | arXiv | 2024 | https://arxiv.org/abs/2311.08596 |
+| Walk the talk? Measuring the faithfulness of large language model explanations | IDU | L2 | — | ICLR | 2025 | — |
 
 #### 1.2 Non-causal & post-hoc rationalization (NPR)
 
 | Paper | Phenomenon | Evaluation | Mitigation | Venue | Year | Link |
 |---|---|---|---|---|---:|---|
-| Measuring Faithfulness in Chain-of-Thought Reasoning | NPR | L1/L2 | — | arXiv | 2023 | https://arxiv.org/abs/2307.13702 |
-| Chain-of-Thought Unfaithfulness as Disguised Accuracy | NPR | L1 | — | TMLR | 2024 | https://arxiv.org/abs/2402.14897 |
-| Chain-of-Thought Reasoning in the Wild Is Not Always Faithful | NPR | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2503.08679 |
+| Measuring faithfulness in chain-of-thought reasoning | NPR | L1/L2 | — | arXiv | 2023 | https://arxiv.org/abs/2307.13702 |
+| Chain-of-thought reasoning in the wild is not always faithful | NPR | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2503.08679 |
+| Chain-of-thought unfaithfulness as disguised accuracy | NPR | L1 | — | TMLR | 2024 | — |
+| Beyond semantics: The unreasonable effectiveness of reasonless intermediate tokens | NPR | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2505.13775 |
+| Can Aha moments be fake? Identifying true and decorative thinking steps in chain-of-thought | NPR | L1/L2 | — | arXiv | 2025 | https://arxiv.org/abs/2510.24941 |
 
-#### 1.3 Alignment-induced unfaithfulness (AIU) & deception/hiding (SDH)
+#### 1.3 Alignment-induced unfaithfulness (AIU)
 
 | Paper | Phenomenon | Evaluation | Mitigation | Venue | Year | Link |
 |---|---|---|---|---|---:|---|
-| Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation | SDH | L2 | VT/FT | arXiv | 2025 | https://arxiv.org/abs/2503.11926 |
-| Monitoring Monitorability | SDH | L2 | VT | arXiv | 2025 | https://arxiv.org/abs/2512.18311 |
+| On the impact of fine-tuning on chain-of-thought reasoning | AIU | L1 | FT | NAACL | 2025 | — |
+| Exploring chain-of-thought reasoning for steerable pluralistic alignment | AIU | L1 | FT | arXiv | 2025 | https://arxiv.org/abs/2510.04045 |
+| Answer-consistent chain-of-thought reinforcement learning for multi-modal large language models | AIU | L2 | FT | arXiv | 2025 | https://arxiv.org/abs/2510.10104 |
+| Chart-RVR: Reinforcement learning with verifiable rewards for explainable chart reasoning | AIU | L2/L3 | FT/VT | arXiv | 2025 | https://arxiv.org/abs/2510.10973 |
+| Truthful or fabricated? Using causal attribution to mitigate reward hacking in explanations | AIU | L2 | II/FT | arXiv | 2025 | https://arxiv.org/abs/2504.05294 |
+
+#### 1.4 Strategic deception & hiding (SDH)
+
+| Paper | Phenomenon | Evaluation | Mitigation | Venue | Year | Link |
+|---|---|---|---|---|---:|---|
+| Sleeper agents: Training deceptive LLMs that persist through safety training | SDH | L2 | FT | arXiv | 2024 | https://arxiv.org/abs/2401.05566 |
+| AI sandbagging: Language models can strategically underperform on evaluations | SDH | L2 | — | ICLR | 2025 | — |
+| Preventing language models from hiding their reasoning | SDH | L2 | VT | arXiv | 2023 | https://arxiv.org/abs/2310.18512 |
+| Can we predict alignment before models finish thinking? Towards monitoring misaligned reasoning models | SDH | L2 | VT | arXiv | 2025 | https://arxiv.org/abs/2507.12428 |
 
 ---
 
 ### 2. Evaluation Benchmarks & Metrics
 
-#### 2.1 L1 — Behavioral audits
+#### 2.1 L1 — Behavioral audits / black-box metrics
 
 | Paper | Level | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
-| Measuring Faithfulness in Chain-of-Thought Reasoning | L1 | CoT dependence via interventions on rationale text | arXiv | 2023 | https://arxiv.org/abs/2307.13702 |
-| Making Reasoning Matter: Measuring and Improving Faithfulness of CoT Reasoning | L1/L2 | metrics + training-time improvements | arXiv | 2024 | https://arxiv.org/abs/2402.13950 |
+| Measuring faithfulness in chain-of-thought reasoning | L1/L2 | interventions on rationale text / dependence tests | arXiv | 2023 | https://arxiv.org/abs/2307.13702 |
+| Making reasoning matter: Measuring and improving faithfulness of chain-of-thought reasoning | L1/L2 | metrics + training-time improvements | EMNLP Findings | 2024 | — |
+| Meta-evaluation of faithfulness metrics for chain-of-thought explanations | L1 | metric reliability / leakage | NeurIPS | 2024 | — |
+| Hypothesis-driven evaluation of faithfulness metrics for chain-of-thought explanations | L1 | systematic critique of metrics | arXiv | 2024 | https://arxiv.org/abs/2410.21457 |
+| On the relationship between explanation uncertainty and faithfulness in chain-of-thought reasoning | L1 | uncertainty vs faithfulness | arXiv | 2024 | https://arxiv.org/abs/2405.15292 |
+| Thought branches: Interpreting LLM reasoning requires resampling | L1 | resampling-based interpretability | arXiv | 2025 | https://arxiv.org/abs/2510.27484 |
 
-#### 2.2 L2 — Intervention-grounded benchmarks
-
-| Paper | Level | Focus | Venue | Year | Link |
-|---|---|---|---|---:|---|
-| FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning | L2 | diagnostic, instance-level faithfulness | arXiv | 2025 | https://arxiv.org/abs/2510.04040 |
-| Walk the Talk? Measuring the Faithfulness of Large Language Model Explanations | L2 | counterfactual simulatability / concept perturbations | arXiv | 2025 | https://arxiv.org/abs/2504.14150 |
-
-#### 2.3 L3 — Structured-verifiable benchmarks
+#### 2.2 L2 — Intervention-grounded / diagnostic benchmarks
 
 | Paper | Level | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
-| Typed Chain-of-Thought: A Curry-Howard Framework for Verifying LLM Reasoning | L3 | type-checked procedural correctness | arXiv | 2025 | https://arxiv.org/abs/2510.01069 |
+| FaithCoT-Bench: Benchmarking instance-level faithfulness of chain-of-thought reasoning | L2 | instance-level diagnostics | arXiv | 2025 | https://arxiv.org/abs/2510.04040 |
+| Walk the talk? Measuring the faithfulness of large language model explanations | L2 | concept perturbations / simulatability | ICLR | 2025 | — |
+| Perturbation-based evaluation of vision-language models for medical chain-of-thought reasoning | L2 | medical VLM CoT robustness | arXiv | 2025 | https://arxiv.org/abs/2501.03890 |
+| Counterfactual evaluation of vision-language models for compositional chain-of-thought reasoning | L2 | counterfactual compositionality | arXiv | 2025 | https://arxiv.org/abs/2501.04245 |
+| LExt: A language model extrapolation benchmark for evaluating reasoning under distribution shift | L2 | OOD reasoning | arXiv | 2025 | https://arxiv.org/abs/2501.02087 |
+| MedOmni-45°: A safety-performance benchmark for reasoning-oriented LLMs in medicine | L2 | medical safety / reasoning | arXiv | 2025 | https://arxiv.org/abs/2508.16213 |
+| A comprehensive evaluation of multilingual chain-of-thought reasoning: Performance, consistency, and faithfulness across languages | L2 | multilingual faithfulness | arXiv | 2025 | https://arxiv.org/abs/2510.09555 |
+| Cross-lingual generalization of chain-of-thought faithfulness in large language models | L2 | cross-lingual transfer | arXiv | 2025 | https://arxiv.org/abs/2501.03245 |
 
-#### 2.4 L4 — White-box benchmarks
+#### 2.3 L3 — Structured-verifiable / constraint-based evaluation
 
 | Paper | Level | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
-| How to Think Step-by-Step: A Mechanistic Understanding of Chain-of-Thought Reasoning | L4 | mechanistic analysis of CoT computation | TMLR | 2024 | https://openreview.net/forum?id=uHLDkQVtyC |
-| Measuring Chain-of-Thought Monitorability Through Faithfulness and Verbosity | L4 | monitorability score combining faithfulness + verbosity | arXiv | 2025 | https://arxiv.org/abs/2510.27378 |
+| Deductive verification of chain-of-thought reasoning | L3 | formal verification | NeurIPS | 2023 | — |
+| Typed chain-of-thought: A Curry-Howard framework for verifying LLM reasoning | L3 | type-checked verification | ACL | 2025 | — |
+| Autorubric-R1V: Rubric-based generative rewards for faithful multimodal reasoning | L3 | rubric-verifiable rewards | arXiv | 2025 | https://arxiv.org/abs/2510.14738 |
+| CoMAT: Chain of mathematically annotated thought improves mathematical reasoning | L3 | math-annotated verifiable steps | arXiv | 2024 | https://arxiv.org/abs/2410.10336 |
+
+#### 2.4 L4 — White-box / mechanistic metrics
+
+| Paper | Level | Focus | Venue | Year | Link |
+|---|---|---|---|---:|---|
+| Understanding intermediate layers using linear classifier probes | L4 | probing internal representations | ICLR | 2017 | — |
+| Interpretability in the wild: A circuit for indirect object identification in GPT-2 small | L4 | circuit-level analysis | ICLR | 2023 | — |
+| Attribution patching outperforms automated circuit discovery | L4 | causal interventions in activations | BlackboxNLP | 2024 | — |
+| Correlation or causation: Analyzing the causal structures of LLM and LRM reasoning process | L4 | causal structure analysis | arXiv | 2025 | https://arxiv.org/abs/2509.17380 |
+| State over tokens: Characterizing the role of reasoning tokens | L4 | token vs state analysis | arXiv | 2025 | https://arxiv.org/abs/2512.12777 |
 
 ---
 
 ### 3. Mitigation Strategies
 
-#### 3.1 Inference-time prompting / sampling
+#### 3.1 Inference-time prompting / orchestration (P, SC)
 
 | Paper | Mitigation | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
-| Chain-of-Thought Prompting Elicits Reasoning in Large Language Models | P | CoT prompting as interface (not a faithfulness guarantee) | NeurIPS | 2022 | https://arxiv.org/abs/2201.11903 |
-| Larger Language Models Don't Care How You Think: Why Chain-of-Thought Prompting Fails in Subjective Tasks | P | CoT failure under subjectivity / preference | ICASSP | 2025 | https://arxiv.org/abs/2409.06173 |
+| Chain-of-thought prompting elicits reasoning in large language models | P | CoT prompting interface | NeurIPS | 2022 | — |
+| Least-to-most prompting enables complex reasoning in large language models | P | staged decomposition | ICLR | 2023 | — |
+| Rephrase and respond: Let large language models ask better questions for themselves | P | self-ask / self-questioning | arXiv | 2023 | https://arxiv.org/abs/2311.04205 |
+| Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks | P | program-style reasoning | NeurIPS | 2022 | — |
+| COREX: Pushing the boundaries of complex reasoning through multi-model collaboration | SC | collaboration / ensemble | arXiv | 2023 | https://arxiv.org/abs/2310.00280 |
 
-#### 3.2 Verification & external tool binding
-
-| Paper | Mitigation | Focus | Venue | Year | Link |
-|---|---|---|---:|---:|---|
-| Typed Chain-of-Thought: A Curry-Howard Framework for Verifying LLM Reasoning | VT | mechanically verifiable intermediate steps | arXiv | 2025 | https://arxiv.org/abs/2510.01069 |
-| Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation | VT | CoT monitoring (and its failure modes) | arXiv | 2025 | https://arxiv.org/abs/2503.11926 |
-
-#### 3.3 Training-time methods & internal intervention
+#### 3.2 Verification & tool binding (VT)
 
 | Paper | Mitigation | Focus | Venue | Year | Link |
 |---|---|---|---|---:|---|
-| Measuring Chain-of-Thought Faithfulness by Unlearning Spurious Reasoning Paths | FT | unlearning to reduce reliance on unfaithful rationales | EMNLP | 2025 | https://aclanthology.org/2025.emnlp-main.504/ |
+| Deductive verification of chain-of-thought reasoning | VT | verifying intermediate steps | NeurIPS | 2023 | — |
+| Typed chain-of-thought: A Curry-Howard framework for verifying LLM reasoning | VT | type-checked reasoning | ACL | 2025 | — |
+| Beyond theorem proving: Benchmarking deductive reasoning with interactive tasks | VT | interactive verification | arXiv | 2025 | https://arxiv.org/abs/2501.04267 |
+
+#### 3.3 Training-time methods (FT)
+
+| Paper | Mitigation | Focus | Venue | Year | Link |
+|---|---|---|---|---:|---|
+| Faithful and efficient reasoning with chain-of-thought distillation | FT | distillation for faithful CoT | ACL | 2023 | — |
+| Inducing faithful chain-of-thought reasoning through perturbation-based training | FT | perturbation training for faithfulness | ACL | 2025 | — |
+| Measuring chain-of-thought faithfulness by unlearning reasoning steps | FT | unlearning spurious reasoning | EMNLP | 2025 | — |
+| Answer-consistent chain-of-thought reinforcement learning for multi-modal large language models | FT | CoT-RL to enforce answer consistency | arXiv | 2025 | https://arxiv.org/abs/2510.10104 |
+| Audit-of-understanding: Posterior-constrained inference for mathematical reasoning in language models | FT | posterior constraints | arXiv | 2025 | https://arxiv.org/abs/2510.10252 |
+| Truthful or fabricated? Using causal attribution to mitigate reward hacking in explanations | FT/II | reward hacking mitigation | arXiv | 2025 | https://arxiv.org/abs/2504.05294 |
+
+#### 3.4 Architectural / internal interventions (ARCH, II)
+
+| Paper | Mitigation | Focus | Venue | Year | Link |
+|---|---|---|---|---:|---|
+| Training large language models to reason in a continuous latent space | ARCH | latent-space reasoning (bottleneck) | arXiv | 2024 | https://arxiv.org/abs/2412.06769 |
+| Locating and editing factual associations in GPT | II | representation editing | NeurIPS | 2022 | — |
 
 ---
 
