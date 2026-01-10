@@ -34,7 +34,6 @@ This repository curates and organizes research on CoT faithfulness, following th
 - **Mitigation:** we summarize interventions spanning inference-time prompting/verification, training-time methods, and internal/architectural approaches.
 
 > **Figures (add to `assets/`)**  
-> - `assets/figure1_failure_modes.png` – Failure modes illustration (recommended)  
 ![Failure Phenomena](https://github.com/jandx20031231/Test/blob/image/Survey%20Image.png)
 
 ---
