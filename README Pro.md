@@ -89,12 +89,12 @@ We classify evaluations into four increasing levels of *ground-truth strength*:
 
 We tag mitigation approaches by the dominant lever:
 
-- **P — Prompting constraints:** instruction tuning at inference-time, rationale templates, refusal policies.
-- **SC — Sampling/ensembling:** self-consistency, majority vote, re-ranking.
-- **VT — Verification & tool binding:** external checkers, solvers, theorem provers, rule-based verifiers.
-- **FT — Training & fine-tuning:** SFT/RL methods explicitly rewarding faithful rationales or penalizing unfaithful ones.
-- **II — Internal intervention:** activation steering/patching, representation editing, circuit-level control.
-- **ARCH — Architectural inductive bias:** designs that force latent structure, enforce bottlenecks, or separate planning from verbalization.
+- **Prompting constraints:** instruction tuning at inference-time, rationale templates, refusal policies.
+- **Sampling/ensembling:** self-consistency, majority vote, re-ranking.
+- **Verification & tool binding:** external checkers, solvers, theorem provers, rule-based verifiers.
+- **Training & fine-tuning:** SFT/RL methods explicitly rewarding faithful rationales or penalizing unfaithful ones.
+- **Internal intervention:** activation steering/patching, representation editing, circuit-level control.
+- **Architectural inductive bias:** designs that force latent structure, enforce bottlenecks, or separate planning from verbalization.
 
 ---
 
