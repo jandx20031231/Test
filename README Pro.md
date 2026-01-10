@@ -35,11 +35,7 @@ This repository curates and organizes research on CoT faithfulness, following th
 
 > **Figures (add to `assets/`)**  
 > - `assets/figure1_failure_modes.png` – Failure modes illustration (recommended)  
-> - `assets/figure2_benchmark_levels.png` – L1–L4 benchmark ladder  
-> - `assets/taxonomy.png` – One-page taxonomy summary  
->
-> Then reference them like:  
-> `![Failure Modes](assets/figure1_failure_modes.png)`
+![Uploading b5fb4c5f99e633b76d1eaf3f6753f170.png…]()
 
 ---
 
